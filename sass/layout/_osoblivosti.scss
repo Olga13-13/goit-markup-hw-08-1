@@ -1,0 +1,39 @@
+.osoblivosti {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.osoblivosti__container {
+    display: flex;
+    gap: 30px;
+}
+
+.osoblivosti__card {
+    width: 270px;
+    height: 248px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.osoblivosti__card-a {
+    @extend %align;
+    width: 270px;
+    height: 120px;
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.osoblivosti__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(primary-text-color-theme-dark);
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.osoblivosti__text {
+    line-height: 1.71;
+    color: var(--primary-text-color-theme-gray);
+}

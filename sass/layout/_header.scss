@@ -1,0 +1,129 @@
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
+    color: var(--secondary-color-dark);
+    margin-right: 93px;
+}
+
+.logo-header__part1 {
+    color: var(--accent-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: 318px;
+}
+
+.menu__link {
+    display: flex;
+    column-gap: 30px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-dark);
+    transition: color var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &.caren-studio::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        top: 44px;
+        transition: color var(--transition-duration-function);
+    }
+}
+
+.menu__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.page-header__contact-mail {
+    @extend %align;
+    column-gap: 10px;
+    width: 161px;
+    height: 16px;
+    transition: color var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &:hover .page-header__icon-mail,
+    &:focus .page-header__icon-mail {
+        fill: currentColor;
+    }
+}
+
+.page-header__contact-phone-number {
+    @extend %align;
+    column-gap: 10px;
+    width: 142px;
+    height: 16px;
+    transition: color var(--transition-duration-function);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &:hover .page-header__icon-mobile,  
+    &:focus .page-header__icon-mobile {
+        fill: currentColor;
+    }
+}
+
+.page-header__contact-mail,
+.page-header__contact-phone-number {
+    color: var(--primary-text-color-theme-gray);
+}
+
+.page-header__icon-mail {
+    content: '';
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-text-color-theme-gray);
+    transition: fill var(--transition-duration-function);
+}
+
+.page-header__icon-mobile {
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-text-color-theme-gray);
+    transition: fill var(--transition-duration-function);
+}

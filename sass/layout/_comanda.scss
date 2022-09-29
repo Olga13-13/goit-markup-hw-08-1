@@ -1,0 +1,76 @@
+.comanda {
+    background: var(--secondary-color);
+}
+
+.comanda-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.comanda-our {
+    @include font(36px, 700, 42px);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comanda-fon {
+    background: var(--secondary-text-color-theme-light);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.comanda-name {
+    @include font(16px, 500, 19px);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.comanda-profesion {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--primary-text-color-theme-gray);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social-list-item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-list-link {
+    @extend %align;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color-theme-light);
+    transition: background-color var(--transition-duration-function), filter var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+        fill: var(--secondary-text-color-theme-light);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-gray);
+    transition: fill var(--transition-duration-function);
+}

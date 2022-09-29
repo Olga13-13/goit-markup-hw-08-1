@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+
+@import "./components/modal-btn";
+@import "./components/portfolio-filters";
+@import "./components/footer-form";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-window-form";
+
+
+@import "./layout/header";
+@import "./layout/shapka";
+@import "./layout/osoblivosti";
+@import "./layout/work";
+@import "./layout/comanda";
+@import "./layout/client";
+@import "./layout/portfolio-projects";
+@import "./layout/footer";
+

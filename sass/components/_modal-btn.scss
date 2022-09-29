@@ -1,0 +1,29 @@
+.section-shapka__btn {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    width: 216px;
+    left: 692px;
+    top: 430px;
+    transition: bakground-color var(--transition-duration-function), filter var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-bgc);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.section-shapka__btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color-theme-light);
+    margin-left: 32px;
+}
