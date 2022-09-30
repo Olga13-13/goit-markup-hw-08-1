@@ -1,11 +1,13 @@
 .osoblivosti {
     padding-top: 60px;
     padding-bottom: 60px;
+    // width: 450px;
+    // height: 994px;
 }
 
 .osoblivosti__container {
-    width: 270px;
-    height: 120px;
+    width: 450px;
+    height: 994px;
 }
 
 .osoblivosti__card {
@@ -15,7 +17,9 @@
 }
 
 .osoblivosti__card-a {
-    @extend %align;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     background: var(--secondary-color);
     border-radius: 4px;
@@ -63,11 +67,13 @@
 @media screen and (min-width: 1200px) {
     .osoblivosti {
         padding-top: 94px;
-        padding-bottom: 188px;
+        padding-bottom: 94px;
     }
     .osoblivosti__container {
         display: flex;
         gap: 30px;
+        width: 1170px;
+        height: 248px;
     }
     
     .osoblivosti__card {
