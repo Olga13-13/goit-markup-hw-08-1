@@ -235,9 +235,9 @@ body {
   border-radius: 4px;
   border: none;
   height: 50px;
-  width: 216px;
-  left: 692px;
-  top: 430px;
+  width: 200px;
+  left: 140px;
+  top: 292px;
   transition: bakground-color var(--transition-duration-function), filter var(--transition-duration-function);
 }
 .section-shapka__btn:hover, .section-shapka__btn:focus {
@@ -251,12 +251,25 @@ body {
   line-height: 1.87;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color-theme-light);
-  margin-left: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-shapka__btn {
+    left: 284px;
+    top: 312px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-shapka__btn {
+    width: 216px;
+    left: 692px;
+    top: 430px;
+  }
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -894,15 +907,17 @@ body {
   }
 }
 .section-shapka {
-  background: var(--secondary-text-color-theme-dark);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/shapka/bcimg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 1600px;
+  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
+  background: var(--secondary-text-color-theme-dark);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/shapka.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-shapka__container {
@@ -914,20 +929,48 @@ body {
 
 .section-shapka__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-light);
   margin-bottom: 30px;
-  height: 120px;
-  width: 696px;
-  left: 452px;
-  top: 280px;
+  height: 84px;
+  width: 360px;
+  left: 60px;
+  top: 178px;
   border-radius: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-shapka {
+    max-width: 1199px;
+  }
+  .section-shapka__title {
+    left: 204px;
+    top: 198px;
+  }
+  .section-shapka {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/shapkatab.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-shapka {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/shapka-des.jpg");
+    max-width: 1600px;
+  }
+  .section-shapka__title {
+    font-size: 44px;
+    line-height: 1.36;
+    height: 120px;
+    width: 696px;
+    left: 452px;
+    top: 280px;
+  }
+}
 .osoblivosti {
   padding-top: 94px;
   padding-bottom: 94px;

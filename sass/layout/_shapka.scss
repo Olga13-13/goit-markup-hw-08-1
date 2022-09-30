@@ -1,13 +1,15 @@
 .section-shapka {
-    background: var(--secondary-text-color-theme-dark);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/shapka/bcimg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1600px;
+    max-width: 767px;
     margin-left: auto;
     margin-right: auto;
+    background: var(--secondary-text-color-theme-dark);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mobile/shapka.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-shapka__container {
@@ -19,16 +21,52 @@
 
 .section-shapka__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color-theme-light);
     margin-bottom: 30px;
-    height: 120px;
-    width: 696px;
-    left: 452px;
-    top: 280px;
+    height: 84px;
+    width: 360px;
+    left: 60px;
+    top: 178px;
     border-radius: 0px;
 }
+
+@media screen and (min-width: 768px) {
+    .section-shapka {
+        max-width: 1199px;    
+    }
+       
+    .section-shapka__title {
+        left: 204px;
+        top: 198px;
+    }
+
+    .section-shapka {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tablet/shapkatab.jpg');
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-shapka {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/desktop/shapka-des.jpg');
+        max-width: 1600px;
+    }
+        
+    .section-shapka__title {
+        font-size: 44px;
+        line-height: 1.36;
+        height: 120px;
+        width: 696px;
+        left: 452px;
+        top: 280px;
+    }  
+}
+
+
+
