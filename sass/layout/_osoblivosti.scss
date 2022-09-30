@@ -1,3 +1,8 @@
+.osoblivosti {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .osoblivosti__container {
     width: 270px;
     height: 120px;
@@ -56,6 +61,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .osoblivosti {
+        padding-top: 94px;
+        padding-bottom: 188px;
+    }
     .osoblivosti__container {
         display: flex;
         gap: 30px;
