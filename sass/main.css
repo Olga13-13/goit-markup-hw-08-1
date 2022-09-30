@@ -29,7 +29,7 @@
   margin: -1px;
 }
 
-.footer-social-list__link, .client-list-link, .footer-main__button, .modal-close-btn {
+.footer-social-list__link, .footer-main__button, .modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1306,16 +1306,17 @@ body {
   }
 }
 .client-name {
-  font-size: 36px;
   font-weight: 700;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
 .client-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -1323,7 +1324,7 @@ body {
   box-sizing: border-box;
   border: 1px solid var(--color-gray);
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 .client-list-item:hover, .client-list-item:focus {
@@ -1332,6 +1333,9 @@ body {
 }
 
 .client-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   transition: border var(--transition-duration-function), border-color var(--transition-duration-function), fill var(--transition-duration-function);
@@ -1344,6 +1348,50 @@ body {
   fill: var(--color-gray);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-list-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .client-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .client-list-item {
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+  }
+  .client-list-item:hover, .client-list-item:focus {
+    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  .client-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: border var(--transition-duration-function), border-color var(--transition-duration-function), fill var(--transition-duration-function);
+  }
+  .client-list-link:hover .client-list-icon, .client-list-link:focus .client-list-icon {
+    fill: var(--accent-color);
+  }
+  .client-list-icon {
+    fill: var(--color-gray);
+  }
+}
 .container-box {
   display: flex;
   flex-wrap: wrap;
