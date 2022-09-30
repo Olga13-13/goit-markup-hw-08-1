@@ -104,10 +104,16 @@ body {
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -1008,24 +1014,18 @@ body {
     top: 280px;
   }
 }
-.osoblivosti {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .osoblivosti__container {
-  display: flex;
-  gap: 30px;
+  width: 270px;
+  height: 120px;
 }
 
 .osoblivosti__card {
-  width: 270px;
-  height: 248px;
-  flex-basis: calc((100% - 90px) / 4);
+  width: 450px;
+  height: 226px;
+  margin-bottom: 30px;
 }
 
 .osoblivosti__card-a {
-  width: 270px;
   height: 120px;
   background: var(--secondary-color);
   border-radius: 4px;
@@ -1036,6 +1036,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(primary-text-color-theme-dark);
   margin-bottom: 10px;
@@ -1045,8 +1047,46 @@ body {
 .osoblivosti__text {
   line-height: 1.71;
   color: var(--primary-text-color-theme-gray);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .osoblivosti__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 738px;
+    height: 480px;
+  }
+  .osoblivosti__card {
+    width: 354px;
+    height: 224px;
+    margin-bottom: 0px;
+  }
+  .osoblivosti__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .osoblivosti__container {
+    display: flex;
+    gap: 30px;
+  }
+  .osoblivosti__card {
+    width: 270px;
+    height: 248px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .osoblivosti__subtitle {
+    text-align: left;
+  }
+  .osoblivosti__card-a {
+    width: 270px;
+    height: 120px;
+  }
+}
 .work {
   padding-top: 0px;
 }
