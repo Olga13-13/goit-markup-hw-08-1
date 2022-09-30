@@ -1665,6 +1665,7 @@ body {
     -moz-column-gap: 165px;
          column-gap: 165px;
     justify-content: space-evenly;
+    width: 650px;
   }
   .logo-footer {
     display: block;
@@ -1673,13 +1674,10 @@ body {
     font-weight: 700;
     line-height: 1.1923076923;
     color: var(--secondary-text-color-theme-light);
-    width: 145px;
     height: 31px;
     left: 215px;
     top: 1688px;
-  }
-  .footer-contact {
-    text-align: left;
+    text-align: center;
   }
   .contact {
     display: block;
@@ -1687,10 +1685,10 @@ body {
   }
   .contact__menu:not(:nth-child(3)) {
     margin-bottom: 9px;
-    text-align: left;
+    text-align: center;
   }
   .contact__menu-tel {
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
