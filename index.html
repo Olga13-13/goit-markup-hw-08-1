@@ -55,10 +55,7 @@
               href="mailto:info@devstudio.com"
               class="page-header__contact-mail link"
             >
-              <svg
-                class="page-header__icon-mail"
-                aria-label="іконка-пошта"
-              >
+              <svg class="page-header__icon-mail" aria-label="іконка-пошта">
                 <use href="./images/sprite.svg.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com
@@ -82,11 +79,7 @@
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button
-            type="button"
-            class="mobile-menu__close-btn"
-            data-menu-close
-          >
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon">
               <use href="./images/sprite.svg.svg#icon-close"></use>
             </svg>
@@ -239,34 +232,56 @@
           <ul class="list work-list">
             <li>
               <div class="work-list-img-wrapper">
-                <img
-                  src="./images/box1.jpg"
-                  alt="компютер"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-1des.jpg     1x,
+                      ./images/desktop/box-1des@2x.jpg  2x,
+                      ./images/desktop/box-1des.webp    1x,
+                      ./images/desktop/box-1des@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img src="./images/desktop/box-1des.jpg" alt="компютер" />
+                </picture>
+
                 <p class="overlay-work">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="work-list-img-wrapper">
-                <img
-                  src="./images/box2.jpg"
-                  alt="телефон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-2des.jpg     1x,
+                      ./images/desktop/box-2des@2x.jpg  2x,
+                      ./images/desktop/box-2des.webp    1x,
+                      ./images/desktop/box-2des@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img src="./images/desktop/box-2des.jpg" alt="компютер" />
+                </picture>
                 <p class="overlay-work">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="work-list-img-wrapper">
-                <img
-                  src="./images/box3.jpg"
-                  alt="планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/box-3des.jpg     1x,
+                      ./images/desktop/box-3des@2x.jpg  2x,
+                      ./images/desktop/box-3des.webp    1x,
+                      ./images/desktop/box-3des@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img src="./images/desktop/box-3des.jpg" alt="компютер" />
+                </picture>
                 <p class="overlay-work">Дизайнерські рішення</p>
               </div>
             </li>
@@ -278,12 +293,39 @@
           <h2 class="comanda-our">Наша команда</h2>
           <ul class="list comanda-list">
             <li class="comanda-fon">
-              <img
-                src="./images/card1.jpg"
-                alt="Ігор"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/card1des.jpg     1x,
+                    ./images/desktop/card1des@2x.jpg  2x,
+                    ./images/desktop/card1des.webp    1x,
+                    ./images/desktop/card1des@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/card1tab.jpg     1x,
+                    ./images/tablet/card1tab@2x.jpg  2x,
+                    ./images/tablet/card1tab.webp    1x,
+                    ./images/tablet/card1tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/card1.jpg     1x,
+                    ./images/mobile/card1@2x.jpg  2x,
+                    ./images/mobile/card1.webp    1x,
+                    ./images/mobile/card1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <img src="./images/card1.jpg" alt="Ігор" />
+              </picture>
               <h3 class="comanda-name">Ігор Дем'яненко</h3>
               <p class="comanda-profesion">Product Designer</p>
               <ul class="social-list list">
@@ -319,12 +361,39 @@
               </ul>
             </li>
             <li class="comanda-fon">
-              <img
-                src="./images/card2.jpg"
-                alt="Ольга"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/card2des.jpg     1x,
+                    ./images/desktop/card2des@2x.jpg  2x,
+                    ./images/desktop/card2des.webp    1x,
+                    ./images/desktop/card2des@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/card2tab.jpg     1x,
+                    ./images/tablet/card2tab@2x.jpg  2x,
+                    ./images/tablet/card2tab.webp    1x,
+                    ./images/tablet/card2tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/card2.jpg     1x,
+                    ./images/mobile/card2@2x.jpg  2x,
+                    ./images/mobile/card2.webp    1x,
+                    ./images/mobile/card2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <img src="./images/card2.jpg" alt="Ольга" />
+              </picture>
               <h3 class="comanda-name">Ольга Рєпіна</h3>
               <p class="comanda-profesion">Frontend Developer</p>
               <ul class="social-list list">
@@ -359,12 +428,39 @@
               </ul>
             </li>
             <li class="comanda-fon">
-              <img
-                src="./images/card3.jpg"
-                alt="Микола"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/card3des.jpg     1x,
+                    ./images/desktop/card3des@2x.jpg  2x,
+                    ./images/desktop/card3des.webp    1x,
+                    ./images/desktop/card3des@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/card3tab.jpg     1x,
+                    ./images/tablet/card3tab@2x.jpg  2x,
+                    ./images/tablet/card3tab.webp    1x,
+                    ./images/tablet/card3tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/card3.jpg     1x,
+                    ./images/mobile/card3@2x.jpg  2x,
+                    ./images/mobile/card3.webp    1x,
+                    ./images/mobile/card3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <img src="./images/card3.jpg" alt="Микола" />
+              </picture>
               <h3 class="comanda-name">Микола Тарасов</h3>
               <p class="comanda-profesion">Marketing</p>
               <ul class="social-list list">
@@ -399,12 +495,39 @@
               </ul>
             </li>
             <li class="comanda-fon">
-              <img
-                src="./images/card4.jpg"
-                alt="Михайло"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/card4des.jpg     1x,
+                    ./images/desktop/card4des@2x.jpg  2x,
+                    ./images/desktop/card4des.webp    1x,
+                    ./images/desktop/card4des@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/card4tab.jpg     1x,
+                    ./images/tablet/card4tab@2x.jpg  2x,
+                    ./images/tablet/card4tab.webp    1x,
+                    ./images/tablet/card4tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/card4.jpg     1x,
+                    ./images/mobile/card4@2x.jpg  2x,
+                    ./images/mobile/card4.webp    1x,
+                    ./images/mobile/card4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <img src="./images/card4.jpg" alt="Михайло" />
+              </picture>
               <h3 class="comanda-name">Михайло Єрмаков</h3>
               <p class="comanda-profesion">UI Designer</p>
               <ul class="social-list list">
