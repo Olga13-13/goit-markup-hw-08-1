@@ -124,6 +124,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) { 
+    
+    
     .container-footer {
         display: flex;
         align-items: baseline;
@@ -131,6 +133,8 @@
         column-gap: 165px;
         justify-content: space-evenly;
         width: 650px;
+        height: 140px;
+        margin-bottom: 60px;
     }
         
     .logo-footer {
@@ -198,6 +202,7 @@
         font-style: normal;
         margin-top: 20px;
         text-align: left;
+        margin-bottom: 0px;
     }
     
     .contact {
@@ -257,6 +262,7 @@
         text-transform: uppercase;
         color: var(--secondary-color-light);
         margin-bottom: 20px;
+        text-align: left;
     }
     
     .footer-social-list {

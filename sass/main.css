@@ -29,7 +29,7 @@
   margin: -1px;
 }
 
-.footer-main__button, .modal-close-btn {
+.modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +86,13 @@ body {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -574,7 +581,7 @@ body {
 }
 
 .footer-main__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   color: var(--secondary-text-color-theme-light);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -594,7 +601,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  min-width: 200px;
+  max-width: 200px;
   padding: 10px;
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-light);
@@ -602,6 +609,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-main__icon {
@@ -609,6 +619,14 @@ body {
   fill: var(--secondary-color-light);
 }
 
+@media screen and (min-width: 480px) {
+  .footer-main__input {
+    width: 450px;
+  }
+  .footer-main__button {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-main__label {
     display: flex;
@@ -622,6 +640,12 @@ body {
     height: 50px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .footer-main__input {
+    width: 450px;
+  }
+  .footer-main__title {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -639,6 +663,7 @@ body {
     color: var(--secondary-text-color-theme-light);
     margin-bottom: 20px;
     margin-top: 0;
+    text-align: left;
   }
   .footer-main__label {
     display: flex;
@@ -671,6 +696,9 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 12px;
   }
   .footer-main__icon {
@@ -1023,48 +1051,86 @@ body {
     transition: fill var(--transition-duration-function);
   }
 }
-.section-shapka {
-  max-width: 767px;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--secondary-text-color-theme-dark);
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/shapka.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@media screen and (min-width: 320px) {
+  .page-header {
+    width: 100%;
+  }
+  .section-shapka {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--secondary-text-color-theme-dark);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/shapka.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .section-shapka__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-shapka__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color-theme-light);
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 0px;
+  }
 }
-
-.section-shapka__container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+@media screen and (min-width: 480px) {
+  .section-shapka {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--secondary-text-color-theme-dark);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/shapka.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .section-shapka__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-shapka__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color-theme-light);
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 0px;
+  }
 }
-
-.section-shapka__title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color-theme-light);
-  margin-bottom: 30px;
-  height: 84px;
-  width: 360px;
-  left: 60px;
-  top: 178px;
-  border-radius: 0px;
-}
-
 @media screen and (min-width: 768px) {
   .section-shapka {
     max-width: 1199px;
   }
   .section-shapka__title {
+    width: 360px;
+    height: 84px;
     left: 204px;
     top: 198px;
   }
@@ -1091,6 +1157,7 @@ body {
 .osoblivosti {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 320px;
 }
 
 .osoblivosti__container {
@@ -1666,6 +1733,8 @@ body {
          column-gap: 165px;
     justify-content: space-evenly;
     width: 650px;
+    height: 140px;
+    margin-bottom: 60px;
   }
   .logo-footer {
     display: block;
@@ -1726,6 +1795,7 @@ body {
     font-style: normal;
     margin-top: 20px;
     text-align: left;
+    margin-bottom: 0px;
   }
   .contact {
     display: block;
@@ -1770,6 +1840,7 @@ body {
     text-transform: uppercase;
     color: var(--secondary-color-light);
     margin-bottom: 20px;
+    text-align: left;
   }
   .footer-social-list {
     display: flex;
