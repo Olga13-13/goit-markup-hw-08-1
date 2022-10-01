@@ -10,8 +10,9 @@
 }
 
 .client-list {
-    display: flex;
+    
     flex-wrap: wrap;
+    display: -webkit-box;
     gap: 30px;
 }
 
@@ -21,6 +22,7 @@
     border-radius: 4px;
     width: 210px;
     height: 92px;
+    flex-basis: calc((100% - 30px)/2);
 
     &:hover,
     &:focus {
@@ -51,6 +53,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .client-list-item {
         width: 226px;
+        flex-basis: calc((100% - 60px)/3);
     }
 }
 
@@ -73,6 +76,7 @@
         border-radius: 4px;
         width: 170px;
         height: 92px;
+        flex-basis: calc((100% - 150px)/6);
     
         &:hover,
         &:focus {

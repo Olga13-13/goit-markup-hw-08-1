@@ -1,45 +1,93 @@
-.menu__link {
-    display: none;
+@media screen and (min-width: 320px) {
+    .menu__link {
+        display: none;
+    }
+
+    .open-mobile-menu-btn {
+        line-height: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .open-mobile-menu-btn__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .logo-header {
+        font-family: var(--secondary-font);
+        @include font(24px, 700, 28px);
+        color: var(--secondary-color-dark);
+    }
+
+    .logo-header__part1 {
+        color: var(--accent-color);
+    }
+
+    .contact__link {
+        display: none;
+    }
+
 }
 
-.open-mobile-menu-btn {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-}
 
-.open-mobile-menu-btn__icon {
-    width: 40px;
-    height: 40px;
-}
+@media screen and (min-width: 480px) {
+    .menu__link {
+        display: none;
+    }
 
-.page-header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .open-mobile-menu-btn {
+        line-height: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
 
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ECECEC;
-}
+    .open-mobile-menu-btn__icon {
+        width: 40px;
+        height: 40px;
+    }
 
-.logo-header {
-    font-family: var(--secondary-font);
-    @include font(24px, 700, 28px);
-    color: var(--secondary-color-dark);
-}
+    .page-header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.logo-header__part1 {
-    color: var(--accent-color);
-}
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ECECEC;
+    }
 
-.contact__link {
-    display: none;
-}
+    .logo-header {
+        font-family: var(--secondary-font);
+        @include font(24px, 700, 28px);
+        color: var(--secondary-color-dark);
+    }
 
+    .logo-header__part1 {
+        color: var(--accent-color);
+    }
+
+    .contact__link {
+        display: none;
+    }
+
+}
 
 
 @media screen and (min-width: 768px) {

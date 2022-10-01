@@ -1,11 +1,12 @@
 .container-footer {
-    width: 320px;
+    
 }
 
 .page-footer {
     background: var(--secondary-text-color-theme-dark);
     padding-top: 60px;
     padding-bottom: 60px;
+    min-width: 450px;
 }
 
 .logo-footer {
